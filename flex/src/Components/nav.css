@@ -1,0 +1,46 @@
+.fcontainer{
+    display: flex;
+    height: auto;
+    width: auto;
+    border: 2px solid gray;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.fitem1{
+    background-color: rgb(43, 255, 0);
+    border: 2px solid black;
+    margin: 12px;
+    width: 100%;
+    height: 100px;
+    order: 1;
+    text-align: center;
+}
+.fitem2{
+    background-color: rgb(43, 255, 0);
+    border: 2px solid black;
+    margin: 12px;
+    width:20%;
+    height: auto;
+    order: 2;
+    text-align: center;
+}
+.fitem3{
+    background-color: rgb(43, 255, 0);
+    border: 2px solid black;
+    margin: 12px;
+    width:75%;
+    height: auto;
+    order: 3;
+    text-align: center;
+}
+.fitem4{
+    background-color: rgb(43, 255, 0);
+    border: 2px solid black;
+    margin: 12px;
+    width:100%;
+    height: 100px;
+    order: 4;
+    text-align: center;
+}
