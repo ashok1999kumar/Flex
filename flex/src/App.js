@@ -1,10 +1,10 @@
 import React from 'react'
-import { Nav } from './Components/Nav'
+import Side  from './Components/Side'
 
 export const App = () => {
     return (
         <div>
-            <Nav></Nav>
+            <Side></Side>
         </div>
     )
 }
