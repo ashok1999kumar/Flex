@@ -10,6 +10,7 @@
    padding: 10px;
    margin: 10px;  
    flex: 1 0 20%;
+   flex-wrap: wrap;
 }
 .divcards{
     margin: 8px;
@@ -19,7 +20,6 @@
     border: solid;
     border-radius: 15px;
     display: flex;
-    /* flx box */
     align-items: center;          
 }
 .cardpic{
@@ -53,19 +53,27 @@ p{
     text-justify: auto;
     font-weight: bold;
 }
-@media (max-width:468px){
+/* @media (max-width:468px){
     .maindiv{
                flex-direction: column;
     }
-}
-@media (max-width:768px){
+} */
+@media (max-width:800px){
     .maindiv{
         width: 100%;
+        flex-direction: row;
+        flex-flow: wrap;
     }
     .divcards{
-        width: 270px;
-        height: 250px;
-        margin:  auto;
+    margin: 8px;
+    width: 300px;
+    height: 150PX;
+    /* margin: auto; */
+    border: solid;
+    border-radius: 15px;
+    display: flex;
+    /* flx box */
+    align-items: center;  
     }
 }
 
