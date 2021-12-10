@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+
+}
+.outerdiv{
+    display: flex;
+    flex-flow: wrap ;
+    justify-content:center;
+    
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    /* Turns a square into a circle   */
+    border-radius: 50%;         
+   
+    
+}
+img{
+    
+    width: 150px;
+    height: 150px;
+    border: solid;
+    border-radius: 50%;
+    display: flex;
+    
+ }
+ /* animation */
+.image{
+    display: block;
+    border: solid white;
+    position:absolute;
+    right:0%;
+    bottom:0%;
+    
+
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+     animation: amar ;
+     animation-duration: 10s;  
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+     
+ } 
+  @keyframes amar{
+    0%{
+        transform:rotateZ(-360deg);
+        top:2%;
+        right:90%;
+        animation-timing-function:ease-in;
+        }
+        12.5%{
+        right:90%;
+        top:80%;
+        animation-timing-function:ease-out;
+        }
+        25%{
+        right:75.5%;
+        top:20%;
+        animation-timing-function:ease-in;
+        }
+        37.5%{
+        right:62%;
+        top:82%;
+        animation-timing-function:ease-out;
+        }
+        50%{
+        right:45%;
+        top:35%;
+        animation-timing-function:ease-in;
+        }
+        62.5%{
+        right:31%;
+        top:82%;
+        animation-timing-function:ease-out;
+        }
+        75%{
+        right:15.5%;
+        top:47.4%;
+        animation-timing-function:ease-in;
+        }
+        100%{
+        right:0%;
+        top:82%;
+        }
+    }
+  

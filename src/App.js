@@ -1,10 +1,12 @@
 import React from 'react'
+import { Animation } from './Components/Animation';
+// import { Jumpball } from './Components/Jumpball';
 
-import { Card } from './Components/Card'
 export const App = () => {
     return (
         <>
-            <Card></Card>
+         {/* <Jumpball />   */}
+        <Animation />
         </>
     )
 }

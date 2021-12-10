@@ -1,10 +1,12 @@
-/* Body part */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
 }
+
+
+
 /* nav part */
 
 nav{
@@ -79,83 +81,115 @@ nav .menu-btn{
 }
 
 /* card part */
-.showdiv{
+
+.Animation{
+        display: flex;
+    word-wrap: wrap;
+    padding: 10px;
+    margin: 0 auto;  
+    flex: 1 0 20%;
+    flex-wrap: wrap;
+    align-items: center;
+    
+ }
+
+ .maindiv{
     margin: 5px;
-    border: solid;
-}
-.maindiv{
-   display: flex;
-   word-wrap: wrap;
-   padding: 10px;
-   margin: 10px;  
-   flex: 1 0 20%;
-   flex-wrap: wrap;
-}
-.divcards{
-    margin: 8px;
-    width: 300px;
-    height: 150PX;
+    width: 400px;
+    height: 200PX;
     /* margin: auto; */
     border: solid;
     border-radius: 15px;
+    background-image: url("a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #b3b3ff;
     display: flex;
-    align-items: center;          
+    align-items: center; 
 }
-.cardpic{
-    margin: 5px;
-    width: 70px;
-    height: 70px;
+ 
+ img{
+    
+    width: 150px;
+    height: 150px;
     border: solid;
     border-radius: 50%;
+    display: flex;
+    
+ }
+  /* animation */
+.image{
+    display: block;
+    margin: 0 auto;
+   
+ }
+ .image:focus,.image:hover{
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+     animation: amar;
+     animation-duration: 10s;
+     animation-direction: infinite;
+ } 
+  @keyframes amar{
+      25%{  transform: rotate(30deg); }
+      50%{  transform: rotate(-30deg);  }
+      75%{ transform: rotate(5deg); }
+      100%{ transform: rotate(0deg);}
+  }
+
+
+ .pic{
+    margin: 5px;
+    width: 150px;
+    height: 150px;   
     display: flex;
     /* justify-content: space-evenly; */
     align-items: center;
     text-align: center;
-}
-.card1{
-    height: 100px;
-    background: #81ecec;
+ }
+ .card{
+    margin: 5px;
+    width:90px ;
+    height: 150px;
+    background-image: url("b.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;   
+    word-wrap: wrap;
     border-radius: 10px;
     justify-content: space-evenly;
     flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 200px;
-}
-h5{
+   
+ }
+ 
+h2{
+    padding: 10px;
     text-align: center;
     text-decoration: underline;
     text-justify: auto;
-    font-weight: bold 25px;  
+    font-weight: bold 50px; 
+    word-wrap: wrap; 
 }
-h3{
-    padding: 30px;
-    text-align: center;
-}
+
 p{
     text-align: center;
     text-justify: auto;
     font-weight: bold;
+    word-wrap: wrap;
+    font-weight:  40px;
 }
-/* @media (max-width:468px){
-    .maindiv{
-               flex-direction: column;
-    }
-} */
+
 @media (max-width:800px){
     .maindiv{
         width: 100%;
         flex-direction: row;
-        /* flex-flow: wrap; */
+        
     }
     .divcards{
     margin: 8px;
     width: 300px;
     height: 150PX;
-    /* margin: auto; */
     border: solid;
     border-radius: 15px;
     display: flex;
-    /* flx box */
     align-items: center;  
     }
     .showdiv{
@@ -163,47 +197,12 @@ p{
         border: solid;
         box-sizing: fixed;
     }
-}
-/* footer */
-.container{
-    margin: 5px;
-    margin-bottom: 10px;
-    height: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-wrap: wrap;
-    background-color: beige;
-    border: solid;
-    justify-content: space-around;
-}
-.fitem{
-    margin-top: 20px;
-    align-items: center;  
-    flex-flow: column;
-    flex-shrink: 1;
+    .card{
+    background-repeat: no-repeat; 
+    background-size: cover;   
     word-wrap: wrap;
-    
-}
-ul{
-    padding: 10px;
-}
-li{
-    padding: 10px;
-}
-@media (max-width:800px){
-  
-    .container{
-        width: 100%;
-        flex-direction:column ;
-        flex-flow: wrap;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    flex-grow: 1;
     }
-    .fitem{
-        margin-top: 20px;
-        align-items: center;  
-        flex-flow: column;
-        word-wrap: wrap;
-        box-sizing: fixed;
-    }
-
-
 }
